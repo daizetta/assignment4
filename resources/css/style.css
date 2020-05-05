@@ -4,3 +4,51 @@
     box-sizing: border-box;
 }
 
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    background-image:url('../images/main-bg.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    display: block;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    min-height: 7vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: whitesmoke;
+}
+
+.logo {
+    background-color: rgb(226,226,226);
+    font-family: 'Megrim', cursive;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%; 
+    margin: auto 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    color:black;
+    text-decoration: none;
+    font-size: 14px;
+
+}
