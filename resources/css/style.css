@@ -9,10 +9,148 @@
     margin: 0 auto;
 }
 
+section {
+    padding: 80px 0;
+    
+}
+
+.section-1 {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+.box {
+    padding: 1%;
+}
+
+/* PARAGRAPHS */
+
+.par {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    color: black; 
+    line-height: 145%;
+    
+}
+
+.par2 {
+    line-height: 145%;
+    width: 80%;
+    margin-left: 15%;
+}
+
+/* IMAGES */
+
+.plane img {
+    max-height: 100%;
+    max-width: 90%;
+    border: 1px black solid;
+}
+
+.plane {
+    float: left;
+    margin: 1% 0 1% 0 !important;
+    display: block;
+}
+.section-1 .col.span-1-of-2 {
+    width: 44.2%;
+    margin: 1% 5% 1% 0% !important;
+}
+
+/* ICONS */
+
+.icon-big {
+    font-size: 350%;
+    display: block !important;
+    color: #dd7f25;
+    margin-bottom: 10px;
+    width: 62px;
+    margin: 0 auto;
+    transform: translateX(-2.5px);
+}
+
+.icon-big.fa-users  {
+    width: 66px;
+}
+
+.icon-big.fa-envelope-open {
+    width: 58px;
+    padding-bottom: 10px;
+}
+
+i {
+    padding-bottom: 10px;
+}
+/* HEADINGS */
+
+h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    color: #cfbcb5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3:after {
+    display:block;
+    height: 2px;
+    background-color: #cfbcb5;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+h4:after {
+    display:block;
+    height: 2px;
+    background-color: #cfbcb5;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+h5:after {
+    display:block;
+    height: 2px;
+    background-color: #cfbcb5;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+h6:after {
+    display:block;
+    height: 2px;
+    background-color: #cfbcb5;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .icon-big.fa-users {
+        margin-top: 210px !important;
+    }
+}
 /* HEADER */
 
 header {
-    background-image:url('../images/main-bg.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url(../images/main-bg.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -20,20 +158,30 @@ header {
     background-position: center center;
     background-attachment: scroll;
     display: block;
+    
 }
+
 nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
     min-height: 7vh;
     font-family: 'Raleway', sans-serif;
+    font-weight: 700;
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
     width: 100%;
 }
 
+.section-lesson {
+    padding:  0px;
+}
+.section-form {
+    padding: 0px 0px 80px 0px;
+}
+
 .logo {
-    background-color: rgb(226,226,226);
+    background: linear-gradient(to right, white, transparent);
     font-family: 'Megrim', cursive;
     font-size: 20px;
 }
@@ -41,7 +189,7 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 30%; 
+    width: 40%; 
     margin: auto 0;
 }
 
@@ -49,9 +197,10 @@ nav {
     list-style: none;
 }
 .nav-links a {
-    color:black;
+    color:#dd7f25;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
+    
 
 }
 
@@ -59,9 +208,163 @@ nav {
     bottom: 100px;
     position: absolute;
     padding: 0px 50px;
+   
 }
 
 .intro h2 {
     font-family: 'Playfair Display', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    color: #dd7f25;
+}
+
+.intro h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    color: #cfbcb5;
+}
+
+
+
+/* IMAGE SECTION */
+
+.img-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.img-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.img-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.img-photo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.20);
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0.7;
+}
+
+.img-photo img:hover {
+    opacity: 1;
+    transform: scale(1.15);
     
+}
+.section-img {
+    padding: 0;
+    padding-bottom: 20px;
+    height: 353.52px;
+}
+
+.diverse {
+    margin: 25px auto;
+    display: block;
+    
+}
+
+/* FORM */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.input [type=text],.input [type=email], select, textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height:
+}
+
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color: #dd7f25;
+    border: 1px solid #dd7f25;
+    color: #fff;
+    margin-right: 15px;
+
+}
+
+input[type=submit]:hover
+input[type=submit]:active {
+    border:  1px solid #dd7819;
+}
+
+.section-form {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #20303e;
+    padding: 50px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited, 
+.social-links li a:link,
+.social-links li a:visited {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #e9e2dc;
+    border: 0;
+    transition: transform 0.2s;
+}
+
+footer-nav li a:hover,
+.footer-nav li a:active, 
+.social-links li a:hover,
+.social-links li a:active {
+    color: #dd;
+}
+.social-links {
+    list-style: none;
+    float: right;
+    font-family: 'Raleway', sans-serif;
+    color: #dd7f25;
+    
+}
+
+.footer-nav li, .social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child, 
+.social-links li:last-child {
+    margin: 0;
+}
+
+footer p {
+    color:#e9e2dc;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 40px;
 }
